@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+html, body{       
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{                                    /*Configuração imagem*/
+    background-image: url(imagens/fundo-log2-1280x853.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{                                 /*Div*/
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 25vh 50vh 25vh;
+}
+
+.main-log{                                   /*Main - dentro de div*/
+    background-color: #ecececaf;
+    border-radius: 10px;
+    box-shadow: 2px 3px 7px #00000038;
+    /*Se refere ao próprio main-log*/
+    display: grid;                           /*Main-log é também um grid*/    
+    grid-template-columns: 1fr 4fr 1fr;     
+    grid-template-rows: 10% 20% 50% 20%;
+    justify-items: center;
+    align-items: center;
+
+    /*Se refere ao container*/
+    grid-column: 2;  
+    grid-row: 2;     
+    text-align: center;           
+}
+
+h3{                                /*No main*/
+    font: bold 30px  Arial, Helvetica, sans-serif; 
+    color: #000000b0;
+    letter-spacing: 2px;    
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+hr{
+    grid-row: inherit;
+    width: 260px; 
+    text-align: center;
+    margin-bottom: 25px;        
+}
+
+
+.ul-log{                        /*ul-log - dentro de main-log*/
+    grid-column: 2;
+    grid-row: 3;
+    list-style: none;
+    margin: 20px;
+    padding: 0;  
+}
+
+.input-log{                      /*Input dentro de ul-log*/
+    margin-bottom: 10px; 
+    margin-left: 10px;   
+    margin-right: 10px;    
+}
+
+#email, #password{                /*ids dentro de input-log*/
+    background-color: #ffffff81;
+    border: 2px solid #6e6e6e5e ;
+    border-radius: 8px ;
+    font-size: 15px;       
+    letter-spacing: 1px; 
+    height: 25px;
+    width: 250px;
+    padding: 8px;        
+}
+
+#email:hover, #password:hover{                /*ids dentro de input-log*/
+    border-color: #a5568894;
+}
+
+#email:focus, #password:focus{                /*ids dentro de input-log*/
+    outline: none;
+}
+
+.btn-log{                            /*li do button dentro de ul-log*/
+    margin-top: 25px;    
+}
+
+#btn{                                /*button dentro de li-log*/
+    background-color: #ebebebcb;
+    border-color: #6e6e6e5e;
+    border-radius: 30px;    
+    letter-spacing: 1px;
+    font-size: 16px;
+    height: 35px;
+    width: 150px;    
+}
+
+#btn:hover{
+    background-color: #ffa8df70;
+    border-color: #a5568894;
+    cursor: pointer;
+}
+
+.no-reg{                                /*não é cadastrado?*/
+    font: 18px Arial, Helvetica, sans-serif;
+    margin-top: 40px;    
+}
+
+.no-reg-link{                           /*não é cadastrado? - link*/
+    font: bold 16px Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    margin-top: 25px;    
+}
+
+.no-reg-link > a{                        /*não é cadastrado? - link*/
+    text-decoration: none;
+    color: #000000;
+}
+
+.no-reg-link:hover > a:hover{                        /*não é cadastrado? - link*/
+    color: #F06EC1;
+}
+
+.no-reg-link > a:visited{                  /*não é cadastrado? - link*/
+    color: #000000;    
+}
+ 
+/* 
+#7CA35B  verde escuro
+#C6F3A0  verde claro
+#F06EC1  rosa
+
+#3BA352  verde medio
+#62F081  verde limao
+*/
+
+   
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-register.css">
+    <script src="script-register.js"></script>
+    <title>Cadastro de usuário</title>
+</head>
+
+<body>
+    <div class="container">
+        <main class="main-reg">
+            <h3>Cadastrar Usuário</h3>
+            <ul class="ul-reg">
+                <li class="li-legend">Nome</li>
+                <li class="input-reg"><input type="text" id="name" maxlength="35" placeholder="Seu nome" autofocus></li>
+                <li class="li-legend">E-mail</li>
+                <li class="input-reg"><input type="email" name="email" id="email" maxlength="35" placeholder="E-mail"></li>
+                <li class="li-legend">Senha</li>
+                <li class="input-reg"><input type="password" name="password" id="password" minlength="1" maxlength="6" placeholder="******"></li>
+                <li class="li-legend">Confirmar Senha</li>
+                <li class="input-reg"><input type="password" name="valid-password" id="valid-password" minlength="1" maxlength="6" placeholder="******"></li>
+                <li class="input-btn"><input type="button" value="Cadastrar" id="btn-reg"></li>
+            </ul>
+        </main>
+    </div>
+</body>
+
+</html>

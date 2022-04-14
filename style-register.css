@@ -1,0 +1,113 @@
+@charset "UTF 8";
+
+html, body{       
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(imagens/fundo-cad2-1280x853.png);
+    background-repeat: none;    
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{                                 /*Div*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20vh 60vh 20vh;
+}
+
+.main-reg{                                   /* main */
+    background-color: #ecececaf;
+    border-radius: 10px;
+    box-shadow: 2px 3px 7px #00000038;
+    /*main-reg é também um grid*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:20% 70% 10%;
+    justify-items: center;
+    align-items: center;
+
+    /* Se refere ao container */
+    grid-column: 3;
+    grid-row: 2;
+    text-align: center;    
+}
+
+h3{                                                 /* dentro do main*/
+    font: bold 32px  Arial, Helvetica, sans-serif;
+    color: #000000b0;
+    letter-spacing: 2px;
+    grid-column: 2; 
+    grid-row: 1;   
+}
+
+.ul-reg{                                         /*ul dos li/inputs de cadastro*/
+    grid-column: 2;
+    grid-row: 2;
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+}
+
+.li-legend{                                        /*li dos legendas dos nomes de cadastro*/
+    font: normal 18px Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    margin-left: 25px;
+    margin-bottom: 2px;
+    text-align: left;
+}
+
+.input-reg{                                        /*inputs de cadastro*/
+    margin-bottom: 15px; 
+    margin-left: 20px;   
+    margin-right: 20px;    
+}
+
+#name, #email, #password, #valid-password{        /*inputs de cadastro*/
+    background-color: #ffffff81;
+    border: 2px solid #6e6e6e5e ;
+    border-radius: 8px ;
+    font-size: 15px;       
+    letter-spacing: 1px; 
+    height: 25px;
+    width: 680px;
+    padding: 8px;  
+}
+#name:hover, #email:hover
+{          /*quando passa o mouse*/
+    border-color: #7CA35B;
+}
+#password:hover, #valid-password:hover{
+    border-color: #7CA35B;
+}
+
+#name:focus, #email:focus{  /*quando está selecionada*/
+    outline: none;
+}
+#password:focus #valid-password:focus{
+    outline: none;
+}
+.input-btn{                         /*botão input de cadastro*/
+    margin-top: 35px;
+}
+
+#btn-reg{                           /*botão input de cadastro*/
+    background-color: #ebebebcb;
+    border-color: #6e6e6e5e;
+    border-radius: 30px;    
+    letter-spacing: 1px;
+    font-size: 18px;
+    height: 40px;
+    width: 200px;     
+}
+
+#btn-reg:hover{
+    background-color: #b8e09569;
+    border-color: #7CA35B;    
+    cursor: pointer;
+}
